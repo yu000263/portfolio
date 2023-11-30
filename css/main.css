@@ -1,0 +1,12 @@
+h1 {
+    font-family: 'Nova Square', sans-serif;
+    font-size: 40px;
+}
+
+h2, p, q {
+    font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
