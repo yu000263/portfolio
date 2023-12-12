@@ -1,12 +1,369 @@
-h1 {
-    font-family: 'Nova Square', sans-serif;
-    font-size: 40px;
+
+:root {
+    --bs-primary: #004D65;
+    --bs-secondary: #0389B3;
+    --bs-primary-rgb: 0, 77, 101;
+    --bs-secondary-rgb: 3, 137, 179;
+    --bs-third-color: #3595B3;
+    --bs-third-rgb: rgb(53, 149, 179);
+    --bs-text-color: #303030;
+    --bs-text-rgb: rgb(48, 48, 48);
+    --gray: #c9c9c9;
+    --bs-gray-rgb: rgb(201, 201, 201);
 }
 
-h2, p, q {
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.navbar-brand, .navbar-nav {
+    font-family: 'Nova Square', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 0 10px 0 10px;
+}
+
+h1 {
+    font-family: 'Nova Square', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Nova Square', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+strong {
     font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 48px;
+    text-align: center;
+}
+
+p {
+  font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 15px;
+}
+
+q {
+  font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 22px;
 }
 
 button {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.banner {
+    display: flex;
+    text-align: center;
+}
+
+.main {
+    margin: auto;
+    max-width: 800px;
+    /* text-align: center; */
+}
+
+h1 {
+    text-align: left;
+}
+
+.banner {
+    padding-bottom: 30px;
+}
+
+.banner-button {
+    margin-top: 30px;
+}
+
+
+.feature {
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+
+.help {
+  padding-top: 10px;
+}
+
+.quote-button {
+  padding: 30px 0 100px 0;
+}
+
+
+
+/* About page Style */
+
+
+.img-showcase {
+  padding: 10px 0 40px 0;
+}
+
+
+/* Contact page Style */
+
+/* Grid layout for contact info */
+
+
+
+.contact-us {
+  padding: 30px;
+}
+
+.contact-us h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.contactinfo {
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.message form {
+  display: flex;
+  flex-direction: column;
+}
+
+.maillist form {
+  display: flex;
+  flex-direction: column;
+}
+
+.message label {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.maillist label {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.message input,
+.message textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid var(--bs-primary);
+  font-size: 0.9rem;
+}
+
+.maillist input,
+.maillist textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid var(--bs-primary);
+  font-size: 0.9rem;
+}
+
+.message button {
+  border: 0cm;
+  background-color: var(--bs-secondary);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.maillist button {
+  border: 0cm;
+  background-color: var(--bs-secondary);
+  color:white;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.message button:hover {
+  background-color: #303030;
+  color: white;
+}
+
+.maillist button:hover {
+  background-color: #303030;
+  color: white;
+}
+
+.business-hour table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.business-hour th,
+.business-hour td {
+  border: 1px solid #1c1c1c;
+  padding: 10px;
+  text-align: center;
+}
+
+.business-hour th {
+  background-color: #1c1c1c;
+  color: #f9f8f2;
+}
+
+.location {
+  grid-area: location;
+  text-align: left;
+}
+
+.location iframe {
+  width: 98%;
+  height: 86%;
+}
+
+/* Grid layout for contactinfo */
+
+.contactinfo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "hours hours maillist maillist "
+    "location location message message";
+  padding-bottom: 20px;
+}
+
+
+.message {
+  grid-area: message;
+  width: auto;
+}
+
+
+.message form input,
+.message form textarea {
+  width: 98%;
+}
+
+
+.business-hour {
+  grid-area: hours;
+  list-style: none;
+}
+
+.business-hour li span {
+  text-decoration: none;
+  font-family: 'Alumni Sans', sans-serif;
+}
+
+.business-hour ul {
+  list-style: none;
+}
+
+.location {
+  grid-area: location;
+  width: auto;
+  height: 500px;
+}
+
+.maillist {
+  grid-area: maillist;
+  width: auto;
+}
+
+
+
+
+/* Footer Style */
+
+.footer {
+    background-color: var(--bs-primary);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    flex: 1;
+    min-width: 200px;
+    margin: 0 10px;
+  }
+  
+  .column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .column p {
+    margin: 10px 0;
+  }
+  
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icon {
+    font-size: 20px;
+    margin: 0 5px;
+  }
+  
+  .copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--bs-primary);
+    color: #ffffff;
+    padding: 10px;
+  }
+  
+  .social-icon {
+    font-size: 1em;
+    margin: 0.5em;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .social-icon:hover {
+    animation: bounce 0.5s infinite alternate;
+  }
+  
+  @keyframes bounce {
+    to {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .social-icons a:hover{
+    background-color: transparent;
+   }
+  
+   .social-icons a{
+    color: inherit;
+   }
+  
+
+/* Navlist Mobile-sized screens */
+@media screen and (max-width: 800px) {
+
+
+  main{
+    padding: 0 30px 0 30px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .contactinfo {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "hours"
+    "maillist"
+    "location"
+    "message";
+  padding-bottom: 20px;
+}
+
 }
