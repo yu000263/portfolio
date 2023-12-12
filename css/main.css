@@ -107,6 +107,10 @@ h1 {
   padding: 10px 0 40px 0;
 }
 
+.readmore{
+  display: none;
+}
+
 
 /* Contact page Style */
 
@@ -364,6 +368,22 @@ h1 {
     "location"
     "message";
   padding-bottom: 20px;
+}
+
+.readmore{
+  display: block;
+}
+
+.about-text-2 {
+  display:none;
+}
+
+.address {
+  padding-bottom: 30px;
+}
+
+.follow-us {
+  padding-bottom: 30px;
 }
 
 }
